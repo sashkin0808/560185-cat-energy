@@ -1,0 +1,15 @@
+.button {
+  padding: 11px 0;
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #68b738;
+
+  &--gray {
+    color: #222222;
+    background-color: #f2f2f2;
+  }
+}
