@@ -1,0 +1,18 @@
+.social {
+  .social__list {
+    margin: 0;
+    padding: 22px 0;
+    list-style: none;
+    border-top: 1px solid $border-gray;
+    border-bottom: 1px solid $border-gray;
+  }
+
+  .social__link {
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: $arial;
+    font-size: 16px;
+    line-height: 16px;
+    color: $graytext;
+  }
+}

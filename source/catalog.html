@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="page-header">
@@ -13,13 +14,13 @@
         <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>Каталог продукции</a>
+            <a class="site-list__link">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -211,14 +212,14 @@
       <section class="show-more">
         <b class="show-more__title">Показать еще 100500 товаров</b>
         <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
-        <a class="show-more__link button button--grey" href="#">Показать все</a>
+        <a class="show-more__link button button--gray" href="#">Показать все</a>
       </section>
 
       <section class="additions-catalog">
         <h2 class="additions-catalog__title">Дополнительные товары</h2>
         <ul class="additions-catalog__list">
           <li class="additions-catalog__item">
-            <article class="catalog-item">
+            <article class="catalog-item catalog-item--additional">
               <h1 class="catalog-item__title catalog-item__title--additional">Сахарозаменитель</h1>
               <table class="catalog-item__description">
                 <tr>
@@ -230,7 +231,7 @@
             </article>
           </li>
           <li class="additions-catalog__item">
-            <article class="catalog-item">
+            <article class="catalog-item catalog-item--additional">
               <h1 class="catalog-item__title catalog-item__title--additional">Питьевая вода</h1>
               <table class="catalog-item__description">
                 <tr>
@@ -242,7 +243,7 @@
             </article>
           </li>
           <li class="additions-catalog__item">
-            <article class="catalog-item">
+            <article class="catalog-item catalog-item--additional">
               <h1 class="catalog-item__title catalog-item__title--additional">Молоко</h1>
               <table class="catalog-item__description">
                 <tr>
@@ -254,7 +255,7 @@
             </article>
           </li>
           <li class="additions-catalog__item">
-            <article class="catalog-item">
+            <article class="catalog-item catalog-item--additional">
               <h1 class="catalog-item__title catalog-item__title--additional">Витамины</h1>
               <table class="catalog-item__description">
                 <tr>

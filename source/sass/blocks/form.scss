@@ -1,0 +1,54 @@
+.form {
+  .form__contact-set,
+  .form__main-set,
+  .form__catalog-set,
+  .form__text-set {
+    border: none;
+  }
+
+  .form__label {
+    font-family: $oswald;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $blacktext;
+  }
+
+  .form__input {
+    padding: 15px;
+    border: 1px solid $l-gray;
+  }
+
+  .form__textarea {
+    height: 118px;
+    padding: 15px;
+    border: 1px solid $l-gray;
+  }
+
+  .form__radio-set {
+    border: none;
+    border-top: 1px solid $w-gray;
+    border-bottom: 1px solid $w-gray;
+  }
+
+  .form__set-title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: $oswald;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    color: $blacktitle;
+  }
+
+  .form__submit-button {
+    margin-bottom: 20px;
+  }
+
+  .form__text {
+    font-family: $arial;
+    font-size: 14px;
+    line-height: 16px;
+    color: $graytext;
+  }
+}
