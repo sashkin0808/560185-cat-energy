@@ -1,8 +1,7 @@
 .show-more {
   padding-top: 80px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ededed;
-}
+  border-bottom: 1px solid $w-gray;
 
 .show-more__title {
   margin: 0;
@@ -10,7 +9,7 @@
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
-  color: #111111;
+  color: $blacktitle;
 }
 
 .show-more__text {
@@ -19,5 +18,9 @@
   font-family: $arial;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $graytext;
 }
+
+}
+
+

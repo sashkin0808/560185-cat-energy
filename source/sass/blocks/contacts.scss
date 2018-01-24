@@ -1,7 +1,10 @@
 .contacts {
   padding-top: 25px;
-  background-color: #f2f2f2;
-}
+  background-color: $gray;
+
+  &--white {
+    background-color: $white;
+  }
 
 .contacts__title {
   margin: 0;
@@ -11,7 +14,7 @@
   font-weight: normal;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: $blacktitle;
 }
 
 .contacts__text {
@@ -20,6 +23,10 @@
   font-family: $arial;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $graytext;
 }
+
+}
+
+
 

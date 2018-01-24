@@ -2,13 +2,15 @@
 .site-list {
   padding: 0;
   list-style: none;
-}
 
 .site-list__link {
-  font-family: $oswald;
+  font-family: $oswaldm;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #111111;
+  color: $blacktitle;
 }
+}
+
+

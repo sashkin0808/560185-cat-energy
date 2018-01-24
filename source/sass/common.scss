@@ -5,11 +5,11 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #68b738;
+  color: $white;
+  background-color: $green;
 
   &--gray {
-    color: #222222;
-    background-color: #f2f2f2;
+    color: $blacktext;
+    background-color: $gray;
   }
 }

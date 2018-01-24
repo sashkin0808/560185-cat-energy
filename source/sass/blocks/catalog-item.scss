@@ -1,20 +1,19 @@
 .catalog-item {
   padding: 25px 0;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $w-gray;
 
   &--first {
-    border-top: 1px solid #ededed;
+    border-top: 1px solid $w-gray;
   }
 
   &--additional {
     padding: 10px 0 17px;
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $l-gray;
 
     &--first {
-      border-top: 1px solid #cdcdcd;
+      border-top: 1px solid $l-gray;
     }
   }
-}
 
 .catalog-item__title {
   font-family: $oswald;
@@ -23,13 +22,13 @@
   line-height: 20px;
 
   a {
-    color: #111111;
+    color: $blacktitle;
     text-decoration: none;
   }
 
   &--additional {
     line-height: 16px;
-    color: #222222;
+    color: $blacktext;
   }
 }
 
@@ -41,10 +40,13 @@
   font-family: $arial;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $graytext;
 
   &--additional {
     font-size: 14px;
     line-height: 14px;
   }
 }
+
+}
+

@@ -1,3 +1,5 @@
+.form {
+
 .form__contact-set,
 .form__main-set,
 .form__catalog-set,
@@ -10,24 +12,24 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #222222;
+  color: $blacktext;
 }
 
 .form__input {
   padding: 15px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $l-gray;
 }
 
 .form__textarea {
   height: 118px;
   padding: 15px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $l-gray;
 }
 
 .form__radio-set {
   border: none;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
+  border-top: 1px solid $w-gray;
+  border-bottom: 1px solid $w-gray;
 }
 
 .form__set-title {
@@ -37,7 +39,7 @@
   font-size: 24px;
   font-weight: normal;
   line-height: 24px;
-  color: #111111;
+  color: $blacktitle;
 }
 
 .form__submit-button {
@@ -48,5 +50,7 @@
   font-family: $arial;
   font-size: 14px;
   line-height: 16px;
-  color: #444444;
+  color: $graytext;
+}
+
 }
