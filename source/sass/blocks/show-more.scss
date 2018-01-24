@@ -3,24 +3,21 @@
   padding-bottom: 25px;
   border-bottom: 1px solid $w-gray;
 
-.show-more__title {
-  margin: 0;
-  font-family: $oswald;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 20px;
-  color: $blacktitle;
+  .show-more__title {
+    margin: 0;
+    font-family: $oswald;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    color: $blacktitle;
+  }
+
+  .show-more__text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: $arial;
+    font-size: 12px;
+    line-height: 16px;
+    color: $graytext;
+  }
 }
-
-.show-more__text {
-  margin: 0;
-  margin-bottom: 20px;
-  font-family: $arial;
-  font-size: 12px;
-  line-height: 16px;
-  color: $graytext;
-}
-
-}
-
-

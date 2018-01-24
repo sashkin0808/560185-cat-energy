@@ -5,20 +5,15 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 
-.main-info__title {
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 36px;
+  .main-info__title {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 36px;
+  }
 
+  .main-info__slogan {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
 }
-
-.main-info__slogan {
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-}
-
-}
-
-
-
