@@ -1,9 +1,23 @@
 .main-info {
-  margin-bottom: 22px;
+  width: 100%;
+  padding-top: 28px;
+  padding-bottom: 22px;
   font-family: $oswald;
   color: $white;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+    background-image: none;
+    color: $blacktitle;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+  }
 
   .main-info__title {
     font-size: 36px;

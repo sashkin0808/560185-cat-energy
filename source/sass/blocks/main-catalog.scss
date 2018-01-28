@@ -9,13 +9,29 @@
   }
 
   .main-catalog__list {
+    margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   .main-catalog__item {
     &:first-child {
       border-top: 1px solid $w-gray;
     }
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 245px;
+    }
+
   }
 }

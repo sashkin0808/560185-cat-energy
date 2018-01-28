@@ -1,6 +1,26 @@
 .main-nav {
+  position: relative;
+  min-height: 65px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+
+  .main-nav__toggle {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   .main-nav__list {
-    padding: 0;
-    list-style: none;
+    @media (max-width: $tablet-width) {
+      position: absolute;
+      right: 0;
+      bottom: -65px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 280px;
+    }
   }
 }

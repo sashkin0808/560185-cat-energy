@@ -1,7 +1,15 @@
 .categories {
+  width: 100%;
+
   .categories__list {
+    margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .categories__item {
@@ -9,6 +17,24 @@
     padding-left: 20px;
     text-align: left;
     background-color: $gray;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 570px;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .categories__title {

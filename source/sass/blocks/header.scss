@@ -1,0 +1,26 @@
+.page-header {
+  width: 100%;
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $tablet-width) {
+      padding-bottom: 200px;
+    }
+
+  }
+
+  .page-header__logo {
+    width: 240px;
+
+    @media (min-width: $tablet-width) {
+      width: 192px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      width: 245px;
+    }
+  }
+}

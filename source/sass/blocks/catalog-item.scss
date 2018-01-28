@@ -2,9 +2,18 @@
   padding: 25px 0;
   border-bottom: 1px solid $w-gray;
 
+  @media (min-width: $tablet-width) {
+    padding: 40px 38px;
+  }
+
   &--additional {
     padding: 10px 0 17px;
     border-bottom: 1px solid $l-gray;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   .catalog-item__title {
@@ -16,6 +25,14 @@
     &--additional {
       line-height: 16px;
       color: $blacktext;
+
+      @media (min-width: $tablet-width) {
+        width: 285px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 245px;
+      }
     }
   }
 
@@ -26,6 +43,13 @@
 
   .catalog-item__description {
     margin-bottom: 20px;
+
+    &--additional {
+      @media (min-width: $tablet-width) {
+        margin-left: auto;
+        width: 285px;
+      }
+    }
   }
 
   .catalog-item__value {
@@ -37,6 +61,17 @@
     &--additional {
       font-size: 14px;
       line-height: 14px;
+    }
+  }
+
+  .catalog-item__order-link {
+    display: block;
+    width: 100%;
+
+    &--add {
+      @media (min-width: $desktop-width) {
+        width: 245px;
+      }
     }
   }
 }

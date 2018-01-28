@@ -1,6 +1,25 @@
 .site-list {
+  width: 280px;
+  margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 516px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 895px;
+  }
+
+  .site-list__item {
+    @media (min-width: $tablet-width) {
+      margin-left: 35px;
+    }
+  }
 
   .site-list__link {
     font-family: $oswald;
@@ -10,5 +29,14 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $blacktitle;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 24.86px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+    }
   }
 }

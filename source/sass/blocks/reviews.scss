@@ -1,9 +1,29 @@
 .reviews {
+  width: 100%;
   padding: 30px 0 35px;
   text-align: left;
   background-color: $gray;
 
+  .reviews__wrapper {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .reviews__text-wrapper {
+     @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media (min-width: $desktop-width) {
+      width: 570px;
+      text-align: left;
+    }
+  }
+
   .reviews__title {
+    width: 100%;
     margin: 0;
     margin-bottom: 15px;
     font-family: $oswald;
@@ -14,6 +34,7 @@
   }
 
   .reviews__text {
+    width: 100%;
     margin: 0;
     margin-bottom: 25px;
     font-family: $arial;
@@ -50,6 +71,19 @@
     line-height: 20px;
     text-align: center;
     color: $blacktitle;
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
+  }
+
+  .reviews__slider-wrapper {
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+      width: 650px;
+    }
+
   }
 
   .reviews__gallery {

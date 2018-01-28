@@ -1,8 +1,19 @@
 .promo {
+  width: 100%;
   margin-top: 39px;
   margin-bottom: 35px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    margin-top: 69px;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 
   .promo__text {
     padding-top: 190px;
