@@ -12,10 +12,11 @@
   }
 
   .reviews__text-wrapper {
-     @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
     }
+
     @media (min-width: $desktop-width) {
       width: 570px;
       text-align: left;
@@ -83,7 +84,6 @@
     @media (min-width: $desktop-width) {
       width: 650px;
     }
-
   }
 
   .reviews__gallery {
