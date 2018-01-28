@@ -3,6 +3,11 @@
   padding-bottom: 25px;
   border-bottom: 1px solid $w-gray;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 38px;
+    border: 1px solid $w-gray;
+  }
+
   .show-more__title {
     margin: 0;
     font-family: $oswald;

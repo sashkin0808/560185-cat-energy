@@ -3,6 +3,14 @@
   padding: 30px 0;
   text-align: left;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 82px;
+  }
+
   .form-section__title {
     margin: 0;
     margin-bottom: 20px;
