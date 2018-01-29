@@ -1,5 +1,5 @@
 .page-footer {
-  width: 100%;
+  @include all-width;
   padding-top: 39px;
   background-color: $gray;
 

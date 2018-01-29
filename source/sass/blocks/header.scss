@@ -1,5 +1,5 @@
 .page-header {
-  width: 100%;
+  @include all-width;
 
   .page-header__wrapper {
     display: flex;
@@ -7,6 +7,14 @@
 
     @media (max-width: $tablet-width) {
       padding-bottom: 200px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 52px;
     }
 
   }
@@ -20,7 +28,8 @@
 
     @media (min-width: $desktop-width) {
       display: flex;
-      width: 245px;
+
+      @include column;
     }
   }
 }

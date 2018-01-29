@@ -16,8 +16,21 @@
   }
 
   .site-list__item {
+    padding: 21px 0;
+    text-align: center;
+    border-top: 1px solid $border;
+
+    &:last-child {
+      border-bottom: 1px solid $border;
+    }
+
     @media (min-width: $tablet-width) {
-      margin-left: 35px;
+      border: none;
+      margin-left: 28px;
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
   }
 

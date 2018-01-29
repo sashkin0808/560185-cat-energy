@@ -9,7 +9,8 @@
   .form__main-set,
   .form__catalog-set,
   .form__text-set {
-    width: 100%;
+    @include all-width;
+
     min-width: 100px;
     margin: 0;
     padding: 0;
@@ -17,19 +18,23 @@
   }
 
   .form__main-set {
+    padding-bottom: 8px;
+
     @media (min-width: $tablet-width) {
-      padding-bottom: 70px;
+      padding-bottom: 50px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 570px;
+      @include desktop-half;
+
       padding-bottom: 0;
     }
   }
 
   .form__set-wrapper {
     @media (min-width: $tablet-width) {
-      width: 100%;
+      @include all-width;
+
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -37,22 +42,29 @@
   }
 
   .form__input-container {
-    width: 100%;
+    @include all-width;
+
     display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 23px;
+    }
 
     &--column {
       @media (min-width: $desktop-width) {
-        width: 570px;
+        @include desktop-half;
       }
     }
 
     &--small {
       @media (min-width: $tablet-width) {
-        width: 284px;
+        @include tablet-285px;
       }
 
       @media (min-width: $desktop-width) {
-        width: 245px;
+        @include column;
       }
     }
   }
@@ -66,99 +78,142 @@
     white-space: nowrap;
 
     &--text-input {
-      margin-right: 17px;
+      margin-right: 13px;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 
   .form__input {
-    padding: 15px;
-    border: 1px solid $l-gray;
     min-width: 100px;
     flex-grow: 1;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 18px;
+    border: 1px solid $border;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   .form__textarea {
-    width: 100%;
-    height: 118px;
-    padding: 15px;
-    border: 1px solid $l-gray;
+    @include all-width;
+
+    height: 150px;
+    padding: 13px;
+    border: 1px solid $border;
+
+    @media (min-width: $tablet-width) {
+      height: 174px;
+    }
   }
 
   .form__radio-set {
-    width: 100%;
+    @include all-width;
+
     min-width: 100px;
     margin: 0;
-    padding: 0;
+    padding: 27px 0;
     border: none;
     border-top: 1px solid $w-gray;
     border-bottom: 1px solid $w-gray;
 
+    @media (min-width: $tablet-width) {
+      border: 1px solid $border;
+    }
+
     @media (min-width: $desktop-width) {
-      width: 570px;
+      @include desktop-half;
     }
   }
 
   .form__set-title {
-    width: 100%;
+    display: block;
+
+    @include all-width;
+
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     font-family: $oswald;
     font-size: 24px;
     font-weight: normal;
     line-height: 24px;
     color: $blacktitle;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 77px;
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 
   .form__contact-set {
     padding-top: 30px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 75px;
+      padding-top: 44px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 48px;
     }
   }
 
   .form__text-set {
-    padding-top: 30px;
+    padding-top: 14px;
 
     @media (min-width: $tablet-width) {
       padding-top: 65px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 46px;
+    }
   }
 
   .form__catalog-set {
-    padding-top: 30px;
+    padding-top: 26px;
     margin-bottom: 40px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 70px;
+      padding-top: 61px;
       margin-bottom: 65px;
     }
   }
 
   .form__submit-button {
-    width: 100%;
+    @include all-width;
 
     @media (min-width: $tablet-width) {
-      width: 283px;
+      @include tablet-285px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 568px;
+      @include desktop-half;
     }
   }
 
   .form__text {
+    margin: 20px 0;
     font-family: $arial;
     font-size: 14px;
     line-height: 16px;
+    text-align: center;
     color: $graytext;
 
     @media (min-width: $tablet-width) {
-      width: 284px;
+      @include tablet-285px;
+
+      font-size: 16px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 570px;
+      @include desktop-half;
     }
   }
 }

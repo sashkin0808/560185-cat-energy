@@ -1,34 +1,49 @@
 .form-section {
-  width: 100%;
-  padding: 30px 0;
+  @include all-width;
+
+  padding: 15px 0 10px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
+    padding-top: 53px;
     padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 69px;
     padding-bottom: 82px;
   }
 
   .form-section__title {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font-family: $oswald;
     font-weight: normal;
     font-size: 36px;
     line-height: 60px;
     color: $blacktitle;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+      margin-bottom: 55px;
+    }
   }
 
   .form-section__description {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 39px;
     font-family: $oswald;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
     color: $blacktitle;
+
+    @media (min-width: $tablet-width) {
+      width: 345px;
+      margin-bottom: 67px;
+      font-size: 20px;
+      line-height: 30px;
+    }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       margin-left: 40px;
