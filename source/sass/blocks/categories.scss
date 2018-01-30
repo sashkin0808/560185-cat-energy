@@ -1,42 +1,107 @@
 .categories {
+  @include all-width;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
+  }
+
   .categories__list {
+    margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .categories__item {
-    padding-top: 35px;
+    padding-top: 30px;
+    padding-bottom: 22px;
     padding-left: 20px;
     text-align: left;
     background-color: $gray;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 53px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      @include desktop-half;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .categories__title {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 29px;
     padding-left: 70px;
     font-family: $oswald;
     font-size: 24px;
     font-weight: normal;
     line-height: 37.02px;
+    text-transform: uppercase;
     color: $blacktitle;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+      font-size: 36px;
+      line-height: 37.02px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 160px;
+    }
   }
 
   .categories__description {
     margin: 0;
     margin-bottom: 20px;
+    padding-right: 30px;
     font-family: $arial;
     font-size: 14px;
     line-height: 18px;
     color: $graytext;
+
+    @media (min-width: $tablet-width) {
+      width: 380px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include all-width;
+
+      padding-right: 53px;
+    }
   }
 
   .categories__link {
-    padding-top: 20px;
-    margin-bottom: 20px;
+    display: block;
+    padding-top: 22px;
     font-family: $oswald;
     font-size: 16px;
     line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
     color: $blacktitle;
+
+    @media (min-width: $tablet-width) {
+      width: 380px;
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }

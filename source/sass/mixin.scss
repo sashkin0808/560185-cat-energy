@@ -1,0 +1,28 @@
+@mixin all-width {
+  width: 100%;
+}
+
+@mixin column {
+  width: 245px;
+}
+
+@mixin tablet-285px {
+  width: 285px;
+}
+
+@mixin mobile-half {
+  width: 140px;
+}
+
+@mixin tablet-half {
+  width: 324px;
+}
+
+@mixin desktop-half {
+  width: 570px;
+}
+
+@mixin desktop-3column {
+  width: 895px;
+}
+

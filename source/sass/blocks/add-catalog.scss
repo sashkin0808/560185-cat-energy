@@ -1,19 +1,49 @@
 .additions-catalog {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 87px;
+  }
+
+  .additions-catalog__wrapper {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
   .additions-catalog__title {
-    margin: 30px 0;
+    @include all-width;
+
+    margin: 30px 0 35px;
     font-family: $oswald;
     font-size: 24px;
     font-weight: normal;
     line-height: 24px;
     color: $blacktitle;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 
   .additions-catalog__list {
+    margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $desktop-width) {
+      @include desktop-3column;
+    }
   }
 
   .additions-catalog__item {
+    @include all-width;
+
+    @media (min-width: $desktop-width) {
+      @include desktop-3column;
+    }
+
     &:first-child {
       border-top: 1px solid $w-gray;
     }

@@ -2,8 +2,10 @@
 
 @import "var.scss";
 @import "fonts.scss";
+@import "mixin.scss";
 @import "common.scss";
 
+@import "blocks/header.scss";
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/advantages.scss";
@@ -22,3 +24,11 @@
 @import "blocks/show-more.scss";
 @import "blocks/add-catalog.scss";
 @import "blocks/promo.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

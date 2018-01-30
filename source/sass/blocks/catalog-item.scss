@@ -1,31 +1,102 @@
 .catalog-item {
-  padding: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 24px;
   border-bottom: 1px solid $w-gray;
 
+  @media (min-width: $tablet-width) {
+    padding: 40px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray;
+  }
+
   &--additional {
-    padding: 10px 0 17px;
+    padding: 0;
+    padding-bottom: 18px;
     border-bottom: 1px solid $l-gray;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: none;
+    }
+  }
+
+  .catalog-item__text-wrapper {
+    @include mobile-half;
+
+    @media (min-width: $tablet-width) {
+      @include all-width;
+    }
   }
 
   .catalog-item__title {
+    width: 80px;
+    margin: 0;
+    padding-top: 22px;
+    padding-bottom: 10px;
     font-family: $oswald;
     font-size: 16px;
     font-weight: normal;
     line-height: 20px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      @include all-width;
+
+      font-size: 20px;
+      text-align: center;
+    }
 
     &--additional {
+      @include all-width;
+
+      padding-top: 12px;
       line-height: 16px;
       color: $blacktext;
+
+      @media (min-width: $tablet-width) {
+        @include tablet-285px;
+
+        line-height: 20px;
+      }
+
+      @media (min-width: $desktop-width) {
+        @include column;
+      }
     }
   }
 
   .catalog-item__link {
     color: $blacktitle;
     text-decoration: none;
+
+    &--img {
+      font-size: 0;
+    }
   }
 
   .catalog-item__description {
-    margin-bottom: 20px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    &--additional {
+      margin-bottom: 12px;
+
+      @media (min-width: $tablet-width) {
+        @include tablet-285px;
+
+        margin-left: auto;
+      }
+    }
   }
 
   .catalog-item__value {
@@ -34,9 +105,30 @@
     line-height: 16px;
     color: $graytext;
 
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+    }
+
     &--additional {
       font-size: 14px;
       line-height: 14px;
+
+      @media (min-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .catalog-item__order-link {
+    @include all-width;
+
+    display: block;
+
+    &--add {
+      @media (min-width: $desktop-width) {
+        @include column;
+      }
     }
   }
 }

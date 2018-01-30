@@ -1,25 +1,62 @@
 .reviews {
-  padding: 30px 0 35px;
+  @include all-width;
+
+  padding: 15px 0 35px;
   text-align: left;
   background-color: $gray;
 
+  .reviews__wrapper {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .reviews__text-wrapper {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include desktop-half;
+
+      text-align: left;
+    }
+  }
+
   .reviews__title {
+    @include all-width;
+
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 23px;
     font-family: $oswald;
     font-size: 36px;
     font-weight: normal;
     line-height: 60px;
     color: $blacktitle;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 
   .reviews__text {
+    @include all-width;
+
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    padding-right: 14px;
     font-family: $arial;
     font-size: 14px;
     line-height: 18px;
     color: $graytext;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   .reviews__table {
@@ -32,6 +69,11 @@
     line-height: 24px;
     text-align: center;
     color: $blacktitle;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 37.02px;
+    }
   }
 
   .reviews__field {
@@ -40,6 +82,11 @@
     line-height: 12px;
     text-align: center;
     color: $graytext;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 
   .reviews__cost {
@@ -49,7 +96,28 @@
     font-size: 14px;
     line-height: 20px;
     text-align: center;
+    text-transform: uppercase;
     color: $blacktitle;
+
+    @media (min-width: $tablet-width) {
+      width: 192px;
+      font-size: 20px;
+      text-align: right;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include all-width;
+
+      text-align: left;
+    }
+  }
+
+  .reviews__slider-wrapper {
+    @include all-width;
+
+    @media (min-width: $desktop-width) {
+      width: 650px;
+    }
   }
 
   .reviews__gallery {

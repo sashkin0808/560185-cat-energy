@@ -1,3 +1,19 @@
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1420px;
+    padding: 0 100px;
+  }
+}
+
 .button {
   padding: 11px 0;
   font-family: $oswald;
@@ -5,8 +21,10 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: $white;
   background-color: $green;
+  border: none;
 
   &--gray {
     color: $blacktext;
