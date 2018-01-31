@@ -4,6 +4,7 @@
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     @media (max-width: $tablet-width) {
       padding-bottom: 200px;
@@ -16,11 +17,13 @@
     @media (min-width: $desktop-width) {
       padding-top: 52px;
     }
-
   }
 
   .page-header__logo {
-    width: 240px;
+    width: 192px;
+    max-height: 65px;
+    display: flex;
+    justify-content: space-between;
 
     @media (min-width: $tablet-width) {
       width: 192px;

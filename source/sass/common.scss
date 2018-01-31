@@ -26,6 +26,12 @@
   background-color: $green;
   border: none;
 
+  @media (min-width: $tablet-width) {
+    padding: 16px 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   &--gray {
     color: $blacktext;
     background-color: $gray;

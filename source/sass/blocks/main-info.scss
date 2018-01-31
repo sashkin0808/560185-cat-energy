@@ -10,19 +10,29 @@
   background-position: center 0;
 
   @media (min-width: $tablet-width) {
-    padding-left: 90px;
+    padding-top: 55px;
+    padding-left: 88px;
     background-image: none;
     color: $blacktitle;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 80px;
+    position: relative;
+    padding-top: 104px;
+    padding-left: 104px;
+    padding-bottom: 55px;
     background-image: url("../img/index-background-mobile@1x.jpg");
+  }
+
+  .main-info__wrapper {
+    @media (min-width: $desktop-width) {
+      position: relative;
+    }
   }
 
   .main-info__title {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     font-size: 36px;
     font-weight: normal;
     line-height: 36px;
@@ -30,15 +40,20 @@
 
     @media (min-width: $tablet-width) {
       width: 427px;
+      margin-bottom: 40px;
       font-size: 60px;
       line-height: 60px;
       text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 42px;
     }
   }
 
   .main-info__slogan {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     font-size: 14px;
     line-height: 14px;
     text-align: center;
@@ -50,11 +65,21 @@
       line-height: 20px;
       text-align: left;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 53px;
+    }
   }
 
   .main-info__image {
-    margin-bottom: 7px;
+    margin-bottom: 1px;
     text-align: center;
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 0;
+      left: 450px;
+    }
   }
 
   .main-info__form-link {

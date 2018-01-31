@@ -20,17 +20,9 @@
     text-align: center;
     border-top: 1px solid $border;
 
-    &:last-child {
-      border-bottom: 1px solid $border;
-    }
-
     @media (min-width: $tablet-width) {
       border: none;
       margin-left: 28px;
-
-      &:last-child {
-        border-bottom: none;
-      }
     }
   }
 

@@ -34,85 +34,120 @@
         <div class="form-section__wrapper wrapper">
           <h1 class="form-section__title">Подбор программы</h1>
           <p class="form-section__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
           <form class="form-section__form form" action="https://echo.htmlacademy.ru" method="post">
-
-            <fieldset class="form__main-set">
-              <div class="form__input-container">
-                <label class="form__label form__label--text-input" for="form__cat-name">Имя:*</label>
-                <input class="form__input" type="text" name="cat-name" id="form__cat-name" placeholder="Барсик" required>
+            <div class="form__flex-container">
+            <div class="form__wrapper form__wrapper--desktop wrapper">
+                <fieldset class="form__main-set">
+                  <div class="form__input-container">
+                    <label class="form__label form__label--text-input" for="form__cat-name">Имя:*</label>
+                    <input class="form__input" type="text" name="cat-name" id="form__cat-name" placeholder="Барсик" required>
+                  </div>
+                  <div class="form__input-container">
+                    <label class="form__label form__label--text-input" for="form__cat-weight">Вес (кг):*</label>
+                    <input class="form__input" type="text" name="cat-weight" id="form__cat-weight" placeholder="7" required>
+                  </div>
+                  <div class="form__input-container">
+                    <label class="form__label form__label--text-input" for="form__cat-age">Возраст (лет):</label>
+                    <input class="form__input" type="text" name="cat-age" id="form__cat-age" placeholder="7">
+                  </div>
+                </fieldset>
               </div>
-              <div class="form__input-container">
-                <label class="form__label form__label--text-input" for="form__cat-weight">Вес (кг):*</label>
-                <input class="form__input" type="text" name="cat-weight" id="form__cat-weight" placeholder="7" required>
+              <div class="form__radio-set">
+                <div class="form__wrapper form__wrapper--desktop wrapper">
+                  <div class="form__wrapper form__wrapper--radio">
+                    <div class="form__input-container form__input-container--radio">
+                      <input class="form__radio visually-hidden" type="radio" id="form__slim" name="mission" value="slim" checked>
+                      <label class="form__label form__label--radio" for="form__slim">Похудение</label>
+                    </div>
+                    <div class="form__input-container form__input-container--radio">
+                      <input class="form__radio visually-hidden" type="radio" id="form__growing" name="mission" value="growing">
+                      <label class="form__label form__label--radio" for="form__growing">Набор массы</label>
+                    </div>
+                    <div class="form__input-container form__input-container--radio">
+                      <input class="form__radio visually-hidden" type="radio" id="form__help" name="mission" value="help">
+                      <label class="form__label form__label--radio" for="form__help">Не знаю (Нужен ваш совет)</label>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="form__input-container">
-                <label class="form__label form__label--text-input" for="form__cat-age">Возраст (лет):</label>
-                <input class="form__input" type="text" name="cat-age" id="form__cat-age" placeholder="7">
-              </div>
-            </fieldset>
-
-            <fieldset class="form__radio-set">
-              <div class="form__input-container">
-                <input class="form__radio" type="radio" id="form__slim" name="mission" value="slim" checked>
-                <label class="form__label form__label--radio-checked" for="form__slim">Похудение</label>
-              </div>
-              <div class="form__input-container">
-                <input class="form__radio" type="radio" id="form__growing" name="mission" value="growing">
-                <label class="form__label form__label--radio" for="form__growing">Набор массы</label>
-              </div>
-              <div class="form__input-container">
-                <input class="form__radio" type="radio" id="form__help" name="mission" value="help">
-                <label class="form__label form__label--radio" for="form__help">Не знаю (Нужен ваш совет)</label>
-              </div>
-            </fieldset>
-
-
+            </div>
 
             <fieldset class="form__contact-set">
-              <div class="form__set-wrapper">
-                <h3 class="form__set-title">Контактные данные (владельца кота)</h3>
-                <div class="form__input-container form__input-container--column">
-                  <label class="form__label form__label--text-input" for="form__email">E-mail:*</label>
-                  <input class="form__input form__input--email" type="text" name="email" id="form__email" placeholder="kuklachev@gmail.com" required>
+              <div class="form__title-shadow">
+                <div class="form__title-wrapper wrapper">
+                  <h3 class="form__set-title">Контактные данные (владельца кота)</h3>
                 </div>
-                <div class="form__input-container form__input-container--column">
-                  <label class="form__label form__label--text-input" for="form__phone">Телефон:*</label>
-                  <input class="form__input form__input--phone" type="text" name="phone" id="form__phone" placeholder="8 (960) 900-60-90" required>
+              </div>
+              <div class="form__wrapper wrapper">
+                <div class="form__set-wrapper">
+                  <div class="form__input-container form__input-container--column">
+                    <label class="form__label form__label--text-input" for="form__email">E-mail:*</label>
+                    <input class="form__input form__input--email" type="text" name="email" id="form__email" placeholder="kuklachev@gmail.com" required>
+                    <svg class="form__img form__img--mail" xmlns="http://www.w3.org/2000/svg" width="17px" height="13px" viewBox="0 0 17 13" xml:space="preserve">
+                      <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
+                    </svg>
+                  </div>
+                  <div class="form__input-container form__input-container--column">
+                    <label class="form__label form__label--text-input" for="form__phone">Телефон:*</label>
+                    <input class="form__input form__input--phone" type="text" name="phone" id="form__phone" placeholder="8 (960) 900-60-90" required>
+                    <svg class="form__img form__img--phone" xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px" viewBox="0 0 20 20" xml:space="preserve">
+                      <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+                      <path
+                        d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+                      c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+                      C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+                      C7.8,20,8.1,19.7,8.1,19.4z"/>
+                    </svg>
+                  </div>
                 </div>
               </div>
             </fieldset>
 
-
             <fieldset class="form__text-set">
-              <label class="form__set-title" for="form__user-text">Комментарий</label>
-              <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" id="form__user-text" name="user-text"></textarea>
+              <div class="form__title-shadow">
+                <div class="form__title-wrapper wrapper">
+                  <label class="form__set-title" for="form__user-text">Комментарий</label>
+                </div>
+              </div>
+              <div class="form__wrapper wrapper">
+                <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" id="form__user-text" name="user-text"></textarea>
+              </div>
             </fieldset>
 
             <fieldset class="form__catalog-set">
-              <div class="form__set-wrapper">
-                <h3 class="form__set-title">Дополнительно</h3>
-                <div class="form__input-container form__input-container--small">
-                  <input class="form__checkbox" type="checkbox" id="form__sweetener" name="sweetener" checked>
-                  <label class="form__label form__label--checkbox-checked" for="form__sweetener">Сахарозаменитель</label>
+              <div class="form__title-shadow">
+                <div class="form__title-wrapper wrapper form__title-wrapper--margin ">
+                  <h3 class="form__set-title ">Дополнительно</h3>
                 </div>
-                <div class="form__input-container form__input-container--small">
-                  <input class="form__checkbox" type="checkbox" id="form__water" name="water">
-                  <label class="form__label form__label--checkbox" for="form__water">Питьевая вода</label>
-                </div>
-                <div class="form__input-container form__input-container--small">
-                  <input class="form__checkbox" type="checkbox" id="form__milk" name="milk">
-                  <label class="form__label form__label--checkbox" for="form__milk">Молоко</label>
-                </div>
-                <div class="form__input-container form__input-container--small">
-                  <input class="form__checkbox" type="checkbox" id="form__vitamins" name="vitamins">
-                  <label class="form__label form__label--checkbox" for="form__vitamins">Витамины</label>
+              </div>
+              <div class="form__wrapper wrapper">
+                <div class="form__set-wrapper">
+                  <div class="form__input-container form__input-container--small">
+                    <input class="form__checkbox visually-hidden" type="checkbox" id="form__sweetener" name="sweetener" checked>
+                    <label class="form__label form__label--checkbox" for="form__sweetener">Сахарозаменитель</label>
+                  </div>
+                  <div class="form__input-container form__input-container--small">
+                    <input class="form__checkbox visually-hidden" type="checkbox" id="form__water" name="water">
+                    <label class="form__label form__label--checkbox" for="form__water">Питьевая вода</label>
+                  </div>
+                  <div class="form__input-container form__input-container--small">
+                    <input class="form__checkbox visually-hidden" type="checkbox" id="form__milk" name="milk">
+                    <label class="form__label form__label--checkbox" for="form__milk">Молоко</label>
+                  </div>
+                  <div class="form__input-container form__input-container--small">
+                    <input class="form__checkbox visually-hidden" type="checkbox" id="form__vitamins" name="vitamins">
+                    <label class="form__label form__label--checkbox" for="form__vitamins">Витамины</label>
+                  </div>
                 </div>
               </div>
             </fieldset>
 
-            <div class="form__set-wrapper">
-              <button class="form__submit-button button" type="submit">Отправить заявку</button>
-              <p class="form__text">* — Обязательные поля</p>
+            <div class="form__wrapper wrapper">
+              <div class="form__set-wrapper">
+                <button class="form__submit-button button" type="submit">Отправить заявку</button>
+                <p class="form__text">* — Обязательные поля</p>
+              </div>
             </div>
 
           </form>
@@ -120,11 +155,16 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__wrapper wrapper">
-          <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__container">
+          <div class="contacts__wrapper wrapper">
+            <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <iframe class="map" width="600" height="450" frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?q=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%20%D0%B4.%2019%2F8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&key=AIzaSyAAPrYKlsOnHmVFzS01AvkI95-3CgFTQZs" allowfullscreen></iframe>
+        </div>
       </section>
 
     </main>
