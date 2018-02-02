@@ -1,4 +1,6 @@
 .catalog-item {
+  @include all-width;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -6,11 +8,11 @@
   border-bottom: 1px solid $w-gray;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 38px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: $gray;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    background-image: linear-gradient($white 82px, $gray 82px);
+    border: none;
   }
 
   &--additional {
@@ -19,13 +21,24 @@
     border-bottom: 1px solid $l-gray;
 
     @media (min-width: $tablet-width) {
-      display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
-      align-items: baseline;
+      align-items: flex-end;
+      padding-top: 24px;
+      padding-left: 38px;
+      padding-bottom: 28px;
+      padding-right: 38px;
+      background: none;
+      border-right: 1px solid $l-gray;
+      border-left: 1px solid $l-gray;
     }
 
     @media (min-width: $desktop-width) {
-      background: none;
+      padding-top: 15px;
+      padding-bottom: 16px;
+      padding-right: 0;
+      padding-left: 0;
+      align-items: center;
     }
   }
 
@@ -34,6 +47,8 @@
 
     @media (min-width: $tablet-width) {
       @include all-width;
+
+      padding: 0 38px;
     }
   }
 
@@ -41,7 +56,7 @@
     width: 80px;
     margin: 0;
     padding-top: 22px;
-    padding-bottom: 10px;
+    padding-bottom: 11px;
     font-family: $oswald;
     font-size: 16px;
     font-weight: normal;
@@ -51,21 +66,32 @@
     @media (min-width: $tablet-width) {
       @include all-width;
 
+      padding-left: 58px;
+      padding-right: 58px;
+      padding-bottom: 21px;
       font-size: 20px;
       text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     &--additional {
       @include all-width;
 
       padding-top: 12px;
+      padding-bottom: 13px;
       line-height: 16px;
       color: $blacktext;
 
       @media (min-width: $tablet-width) {
         @include tablet-285px;
 
+        padding: 0;
         line-height: 20px;
+        text-align: left;
       }
 
       @media (min-width: $desktop-width) {
@@ -80,39 +106,54 @@
 
     &--img {
       font-size: 0;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 15px;
+      }
     }
   }
 
   .catalog-item__description {
     @include mobile-half;
 
+    border-spacing: 0;
+
     @media (min-width: $tablet-width) {
       @include all-width;
-      margin-bottom: 30px;
+
+      margin-bottom: 33px;
     }
 
     &--additional {
       @include all-width;
 
-      margin-bottom: 12px;
+      margin-bottom: 15px;
 
       @media (min-width: $tablet-width) {
         @include tablet-285px;
 
+        margin-bottom: 0;
         margin-left: auto;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-right: 40px;
       }
     }
   }
 
   .catalog-item__value {
     width: 50%;
+    padding: 0;
     font-family: $arial;
     font-size: 12px;
     line-height: 16px;
     color: $graytext;
 
     @media (min-width: $tablet-width) {
+      padding: 7px 0;
       font-size: 16px;
+      border-bottom: 1px solid $l-gray;
     }
 
     &--col-2 {
@@ -124,10 +165,24 @@
       line-height: 14px;
 
       @media (min-width: $tablet-width) {
-
+        width: 192px;
+        padding: 0;
         font-size: 16px;
         line-height: 20px;
         text-align: right;
+        border-bottom: none;
+      }
+
+      @media (min-width: $desktop-width) {
+        text-align: left;
+      }
+    }
+
+    &--small {
+      text-align: right;
+
+      @media (min-width: $tablet-width) {
+        width: 94px;
       }
     }
   }
@@ -137,9 +192,30 @@
 
     display: block;
 
+    @media (min-width: $tablet-width) {
+      width: 248px;
+      margin: 0 38px;
+      padding: 10px 0;
+      font-size: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 167px;
+      margin: 0 38px;
+    }
+
     &--add {
+      @media (min-width: $tablet-width) {
+        @include all-width;
+
+        margin: 0;
+        margin-top: 26px;
+      }
+
       @media (min-width: $desktop-width) {
         @include column;
+
+        margin: 0;
       }
     }
   }

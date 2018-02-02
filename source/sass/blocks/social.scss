@@ -1,7 +1,7 @@
 .social {
   .social__list {
     margin: 0;
-    padding: 22px 0;
+    padding: 22px 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
   }
 
   .social__item:not(:last-child) {
-    margin-right: 38px;
+    margin-right: 37px;
   }
 
   .social__link {
