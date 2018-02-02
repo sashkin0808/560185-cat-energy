@@ -3,22 +3,31 @@
     margin: 0;
     padding: 22px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     border-top: 1px solid $border-gray;
     border-bottom: 1px solid $border-gray;
 
     @media (min-width: $tablet-width) {
       border: none;
+      padding: 0;
     }
+  }
+
+  .social__item:not(:last-child) {
+    margin-right: 38px;
   }
 
   .social__link {
     margin: 0;
-    margin-bottom: 25px;
     font-family: $arial;
     font-size: 16px;
     line-height: 16px;
     color: $graytext;
+  }
+
+  .social__img {
+    fill: $grayicon;
   }
 }

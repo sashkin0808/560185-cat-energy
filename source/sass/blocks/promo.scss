@@ -22,12 +22,24 @@
   }
 
   .promo__text {
+    position: relative;
     margin: 0;
     padding-top: 188px;
     padding-bottom: 45px;
     font-family: $arial;
     font-size: 16px;
+    text-align: center;
     color: $white;
+
+    &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 53px;
+    width: 55px;
+    height: 60px;
+    background-image: url(../img/icon-gift.svg);
+}
 
     @media (min-width: $tablet-width) {
       padding: 0;

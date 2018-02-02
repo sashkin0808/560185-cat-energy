@@ -1,5 +1,8 @@
 .copyright {
   .copyright__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
     margin-bottom: 25px;
     font-family: $arial;
@@ -7,5 +10,15 @@
     line-height: 16px;
     text-decoration: none;
     color: $graytext;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
+
+  .copyright__icon {
+
+  }
+
+
 }

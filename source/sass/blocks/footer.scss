@@ -1,28 +1,39 @@
 .page-footer {
   @include all-width;
+
   padding-top: 39px;
+  padding-bottom: 20px;
+  text-align: center;
+  vertical-align: middle;
   background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
 
   .page-footer__wrapper {
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
+      align-items: flex-end;
     }
   }
 
-  .page-footer__logo {
-    margin-bottom: 31px;
+  @media (max-width: $tablet-width) {
+    .page-footer__logo {
+      display: block;
+      margin-bottom: 31px;
+    }
+
+    .page-footer__social {
+      margin-bottom: 22px;
+    }
+
+    .page-footer__table {
+      margin-bottom: 20px;
+    }
   }
 
-  .page-footer__social {
-    margin-bottom: 22px;
-  }
-
-  .page-footer__table {
-    margin-bottom: 20px;
-  }
-
-  .page-footer__copyright {
-    margin-bottom: 20px;
-  }
+  .page-footer__copyright {}
 }

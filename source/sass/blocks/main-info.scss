@@ -11,7 +11,6 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 55px;
-    padding-left: 88px;
     background-image: none;
     color: $blacktitle;
   }
@@ -19,14 +18,18 @@
   @media (min-width: $desktop-width) {
     position: relative;
     padding-top: 104px;
-    padding-left: 104px;
     padding-bottom: 55px;
     background-image: url("../img/index-background-mobile@1x.jpg");
   }
 
   .main-info__wrapper {
+    @media (min-width: $tablet-width) {
+      padding-left: 120px;
+    }
+
     @media (min-width: $desktop-width) {
       position: relative;
+      padding-left: 180px;
     }
   }
 

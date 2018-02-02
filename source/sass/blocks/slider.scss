@@ -41,6 +41,7 @@
   }
 
   .slider__button {
+    position: relative;
     width: 84px;
     height: 14px;
     margin: 0 15px;
@@ -48,11 +49,44 @@
     border-radius: 6px;
     background-color: $white;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 6px;
+      width: 35px;
+      height: 6px;
+      border-radius: 3px;
+      background-color: $green;
+
+      @media (min-width: $tablet-width) {
+        top: -15px;
+        left: 200px;
+        width: 34px;
+        height: 34px;
+        border: 1px solid $l-gray;
+        border-radius: 50%;
+        background-color: $white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      }
+    }
+
     @media (min-width: $tablet-width) {
       width: 428px;
       height: 6px;
       border-radius: 2.5px;
       background-color: $l-gray;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 214px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $green;
+      }
     }
   }
 }

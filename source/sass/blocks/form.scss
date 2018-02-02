@@ -65,7 +65,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      align-items: baseline;
+      align-items: center;
     }
   }
 
@@ -103,6 +103,8 @@
     &--column {
       @media (min-width: $desktop-width) {
         @include desktop-half;
+
+        margin-bottom: 0;
       }
     }
 
@@ -117,6 +119,8 @@
 
       @media (min-width: $desktop-width) {
         @include column;
+
+        margin-bottom: 0;
       }
     }
   }
@@ -131,6 +135,10 @@
 
     &--text-input {
       margin-right: 13px;
+
+      @media (min-width: $desktop-width) {
+        margin-right: 18px;
+      }
     }
 
     &--radio {
@@ -175,6 +183,10 @@
 
       @media (min-width: $tablet-width) {
         padding-left: 60px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-left: 58px;
       }
 
       &::before {
@@ -338,8 +350,8 @@
     @media (min-width: $desktop-width) {
       @include desktop-half;
 
-      padding: 31px 0;
-      padding-left: 25px;
+      padding: 33px 0 34px;
+      padding-left: 26px;
       border: 1px solid $border;
     }
   }
@@ -371,6 +383,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-bottom: 74px;
       padding-left: 60px;
     }
 
@@ -412,7 +425,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 72px;
+      padding-top: 70px;
     }
   }
 
@@ -422,6 +435,10 @@
     @media (min-width: $tablet-width) {
       padding-top: 46px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 70px;
+    }
   }
 
   .form__catalog-set {
@@ -430,11 +447,12 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 61px;
-      margin-bottom: 13px;
+      margin-bottom: 10px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 21px;
+      margin-bottom: 70px;
+      padding-top: 64px;
     }
   }
 
