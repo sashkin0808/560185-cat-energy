@@ -1,12 +1,40 @@
 .show-more {
+  position: relative;
+
   @include all-width;
 
   padding-top: 80px;
   border-bottom: 1px solid $w-gray;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 125px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icon-plus-mobile.svg);
+    opacity: 0.2;
+
+    @media (min-width: $tablet-width) {
+      top: 136px;
+      left: 133px;
+      width: 60px;
+      height: 60px;
+      background-image: url(../img/icon-plus.svg);
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 40px 38px;
-    border: 1px solid $w-gray;
+    padding-top: 82px;
+    border: none;
+  }
+
+  .show-more__wrapper {
+    @media (min-width: $tablet-width) {
+      padding: 136px 38px 39px;
+      border: 1px solid $w-gray;
+    }
   }
 
   .show-more__title {
@@ -22,9 +50,18 @@
     color: $blacktitle;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 20px;
-      padding-top: 160px;
+      margin-bottom: 0;
+      padding-top: 26px;
+      padding-bottom: 26px;
+      padding-left: 50px;
+      padding-right: 50px;
       font-size: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 28px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -38,8 +75,15 @@
     color: $graytext;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 80px;
+      margin-bottom: 82px;
+      padding: 0 10px;
       font-size: 16px;
+      line-height: 19px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 83px;
+      padding: 0;
     }
   }
 
@@ -47,5 +91,10 @@
     display: block;
 
     @include all-width;
+
+    @media (min-width: $tablet-width) {
+      padding: 10px 0;
+      font-size: 16px;
+    }
   }
 }

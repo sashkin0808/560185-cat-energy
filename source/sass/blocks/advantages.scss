@@ -5,11 +5,13 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
+    padding-top: 47px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 80px;
+    padding-top: 75px;
+    padding-bottom: 0;
   }
 
   .advantages__title {
@@ -22,9 +24,13 @@
     color: $blacktitle;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 60px;
+      margin-bottom: 10px;
       font-size: 60px;
       line-height: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 72px;
     }
   }
 
@@ -41,9 +47,63 @@
   }
 
   .advantages__item {
+    position: relative;
     margin-bottom: 25px;
     padding: 0;
     padding-left: 80px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 61px;
+      margin-bottom: 70px;
+      padding-left: 0;
+      padding-top: 113px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      margin-bottom: 45px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-color: $green;
+
+      @media (min-width: $tablet-width) {
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &--contain::before {
+      background-image: url(../img/advantage-leaf@1x.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--use::before {
+      background-image: url(../img/advantage-powder@1x.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--food::before {
+      background-image: url(../img/advantage-dining@1x.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--time::before {
+      background-image: url(../img/advantage-clock@1x.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
     @media (min-width: $tablet-width) {
       @include tablet-half;
@@ -51,6 +111,32 @@
 
     @media (min-width: $desktop-width) {
       @include column;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "1";
+        font-family: $oswald;
+        font-size: 281.07px;
+        line-height: 281.07px;
+        color: $gray;
+        position: absolute;
+        top: -38px;
+        left: 110px;
+        z-index: -1;
+      }
+
+      &--use::after {
+        content: "2";
+      }
+
+      &--food::after {
+        content: "3";
+      }
+
+      &--time::after {
+        content: "4";
+      }
     }
   }
 
@@ -62,6 +148,8 @@
     color: $graytext;
 
     @media (min-width: $tablet-width) {
+      @include column;
+
       font-size: 16px;
       line-height: 24px;
     }

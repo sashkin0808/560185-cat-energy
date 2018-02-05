@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-  min-height: 65px;
 
   @media (min-width: $tablet-width) {
     min-height: 0;
@@ -8,7 +7,30 @@
   }
 
   .main-nav__toggle {
-    height: 65px;
+    height: 62px;
+    background: none;
+    border: none;
+
+    &--open::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 23px;
+      width: 24px;
+      height: 18px;
+      background-image: url(../img/icon-mobile-menu.svg);
+    }
+
+    &--close::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 23px;
+      width: 18px;
+      height: 18px;
+      background-image: url(../img/icon-close.svg);
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }

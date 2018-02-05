@@ -1,9 +1,102 @@
-.slider__toggle {
-  font-family: $oswald;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $blacktitle;
-  border: none;
-  background: none;
+.slider {
+  .slider__list {
+    height: 240px;
+
+    @media (min-width: $tablet-width) {
+      height: 517px;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  .slider__item {
+    display: none;
+
+    &--open {
+      display: block;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      padding: 0 16px;
+    }
+  }
+
+  .slider__toggles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $desktop-width) {
+      padding-right: 40px;
+      justify-content: flex-end;
+    }
+  }
+
+  .slider__toggle {
+    font-family: $oswald;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $blacktitle;
+    border: none;
+    background: none;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      padding-bottom: 7px;
+      font-size: 20px;
+      border-bottom: 1px dotted rgba(1, 1, 1, 0.23);
+    }
+  }
+
+  .slider__button {
+    position: relative;
+    width: 84px;
+    height: 14px;
+    margin: 0 12px;
+    border: 1px solid $l-gray;
+    border-radius: 6px;
+    background-color: $white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 6px;
+      width: 35px;
+      height: 6px;
+      border-radius: 3px;
+      background-color: $green;
+
+      @media (min-width: $tablet-width) {
+        top: -16px;
+        left: 200px;
+        width: 34px;
+        height: 34px;
+        border: 1px solid $l-gray;
+        border-radius: 50%;
+        background-color: $white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 428px;
+      height: 6px;
+      margin: 0 23px;
+      border-radius: 2.5px;
+      background-color: $l-gray;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: 214px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $green;
+      }
+    }
+  }
 }

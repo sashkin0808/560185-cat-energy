@@ -1,6 +1,14 @@
 .main-catalog {
   padding-bottom: 21px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 46px;
+  }
+
   .main-catalog__title {
     margin: 0;
     padding-top: 14px;
@@ -12,8 +20,15 @@
     color: $blacktitle;
 
     @media (min-width: $tablet-width) {
+      padding-top: 56px;
+      padding-bottom: 24px;
       font-size: 60px;
       line-height: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 69px;
+      padding-bottom: 25px;
     }
   }
 
@@ -30,8 +45,10 @@
   }
 
   .main-catalog__item {
-    &:first-child {
-      border-top: 1px solid $w-gray;
+    @media (max-width: $tablet-width) {
+      &:first-child {
+        border-top: 1px solid $w-gray;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -39,7 +56,7 @@
 
       @include tablet-half;
 
-      margin-top: 140px;
+      margin-top: 59px;
     }
 
     @media (min-width: $desktop-width) {
