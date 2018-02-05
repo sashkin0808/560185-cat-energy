@@ -28,10 +28,11 @@
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     @media (min-width: $tablet-width) {
       padding: 0 70px;
-      padding-bottom: 38px;
+      padding-bottom: 32px;
     }
 
     @media (min-width: $desktop-width) {
@@ -43,7 +44,7 @@
       margin: 0;
       left: 100px;
       top: 91px;
-      padding: 68px 75px 35px 75px;
+      padding: 63px 75px 35px 75px;
       background: $white;
       z-index: 2;
     }
@@ -67,7 +68,7 @@
     }
   }
 
-  .contacts__text {
+  .contacts__description {
     width: 50%;
     margin: 0;
     margin-bottom: 25px;
@@ -82,7 +83,18 @@
       text-align: right;
     }
 
-    @media (min-width: $desktop-width) {}
+    @media (min-width: $desktop-width) {
+      text-align: left;
+    }
+  }
+
+  .contacts__text {
+    &--margin {
+      @media (min-width: $tablet-width) {
+        display: block;
+        margin-bottom: 21px;
+      }
+    }
   }
 
   .contacts__map {

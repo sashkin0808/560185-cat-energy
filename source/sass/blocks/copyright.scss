@@ -13,12 +13,17 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+    padding-top: 13px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
     }
   }
 
-  .copyright__icon {
-
+  .copyright__text {
+    @media (min-width: $desktop-width) {
+      margin-right: 24px;
+    }
   }
-
-
 }

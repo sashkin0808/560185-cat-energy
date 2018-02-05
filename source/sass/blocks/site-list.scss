@@ -56,3 +56,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list--background {
+    .site-list__item {
+      &--active {
+        border-color: $white;
+      }
+    }
+
+    .site-list__link {
+      color: $white;
+    }
+  }
+}

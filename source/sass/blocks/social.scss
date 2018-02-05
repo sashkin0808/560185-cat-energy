@@ -1,7 +1,7 @@
 .social {
   .social__list {
     margin: 0;
-    padding: 22px 0 20px;
+    padding: 22px 0 17px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,17 @@
 
   .social__item:not(:last-child) {
     margin-right: 37px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 28px;
+    }
+  }
+
+  .social__item:last-child {
+    margin-right: 10px;
+    @media (min-width: $tablet-width) {
+      margin-right: 18px;
+    }
   }
 
   .social__link {
@@ -29,5 +40,17 @@
 
   .social__img {
     fill: $grayicon;
+
+    &--big {
+      @media (max-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
   }
 }

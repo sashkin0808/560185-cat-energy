@@ -9,13 +9,14 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
-    padding-bottom: 74px;
+    padding-bottom: 66px;
     border-top: 1px solid $border;
     background: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 68px;
     border: none;
   }
 
@@ -32,20 +33,32 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 180px;
-      height: calc(100% - 180px);
+      top: 216px;
+      height: calc(100% - 216px);
       background: $gray;
     }
   }
 
   .reviews__wrapper {
+    @media (max-width: $tablet-width) {
+      padding: 0;
+    }
+
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 70px;
+    }
   }
 
   .reviews__text-wrapper {
+    @media (max-width: $tablet-width) {
+      padding: 0 20px;
+    }
+
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
@@ -77,7 +90,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 145px;
+      margin-top: 30px;
+      margin-bottom: 147px;
     }
   }
 
@@ -111,12 +125,12 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 73px;
-      width: 365px;
+      width: 370px;
       table-layout: fixed;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 60px;
+      margin-bottom: 37px;
     }
   }
 
@@ -157,7 +171,7 @@
   }
 
   .reviews__field-wrapper {
-    margin-top: -12px;
+    margin-top: -14px;
     text-align: center;
 
     @media (max-width: $tablet-width) {
@@ -171,6 +185,7 @@
     }
 
     @media (min-width: $tablet-width) {
+      margin-top: -10px;
       width: auto;
       white-space: nowrap;
     }
@@ -199,7 +214,9 @@
     @media (min-width: $tablet-width) {
       width: 192px;
       margin-bottom: 65px;
+      padding-top: 11px;
       font-size: 20px;
+      line-height: 27px;
       text-align: right;
     }
 
@@ -211,16 +228,20 @@
     }
   }
 
+  .reviews__cost-text {
+    font-size: 100%;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 58px;
+    }
+  }
+
   .reviews__slider-wrapper {
     @include all-width;
 
-    @media (min-width: $tablet-width) {}
-
     @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: column;
-      width: 650px;
-      margin-top: -80px;
+      width: 690px;
+      margin-top: -20px;
     }
   }
 
@@ -229,8 +250,12 @@
     margin-bottom: 28px;
     padding: 0;
 
+    @media (min-width: $tablet-width) {
+      margin-bottom: 23px;
+    }
+
     @media (min-width: $desktop-width) {
-      margin-bottom: 65px;
+      margin-bottom: 35px;
     }
   }
 }

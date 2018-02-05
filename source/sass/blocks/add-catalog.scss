@@ -39,7 +39,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-left: 62px;
+      padding-left: 69px;
     }
   }
 
@@ -61,6 +61,11 @@
       font-size: 36px;
       line-height: 36px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 40px;
+      padding-right: 35px;
+    }
   }
 
   .additions-catalog__list {
@@ -81,7 +86,7 @@
     }
 
     &:first-child {
-      border-top: 1px solid $w-gray;
+      border-top: 1px solid $l-gray;
     }
   }
 }

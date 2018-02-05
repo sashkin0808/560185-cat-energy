@@ -60,9 +60,9 @@
         left: 0;
       }
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $desktop-width) {
         top: 0;
-        left: 57;
+        left: 57px;
       }
     }
 
@@ -74,7 +74,7 @@
 
     @media (min-width: $desktop-width) {
       padding: 0;
-      padding-top: 125px;
+      padding-top: 122px;
       text-align: center;
     }
   }

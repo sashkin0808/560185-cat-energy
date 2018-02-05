@@ -1,8 +1,12 @@
 .categories {
   @include all-width;
 
+  @media (min-width: $tablet-width) {
+    margin-top: -75px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-top: 80px;
+    margin-top: 0;
   }
 
   .categories__list {
