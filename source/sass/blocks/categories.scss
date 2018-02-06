@@ -221,6 +221,21 @@
       }
     }
 
+    &:hover {
+      &::after {
+        width: 45px;
+        background-image: url(../img/icon-right-arrow-verylong.svg);
+
+        @media (min-width: $tablet-width) {
+          width: 58px;
+        }
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     @media (min-width: $tablet-width) {
       width: 380px;
       font-size: 20px;

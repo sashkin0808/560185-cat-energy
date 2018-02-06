@@ -26,6 +26,15 @@
   background-color: $green;
   border: none;
 
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:active {
+    color: $white30;
+    background-color: $green-hover;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 16px 0;
     font-size: 20px;
@@ -35,5 +44,14 @@
   &--gray {
     color: $blacktext;
     background-color: $gray;
+
+    &:hover {
+      background-color: $grayhover;
+    }
+
+    &:active {
+      color: $graytext30;
+      background-color: $grayhover;
+    }
   }
 }
