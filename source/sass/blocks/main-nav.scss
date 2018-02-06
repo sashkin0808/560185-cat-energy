@@ -7,6 +7,10 @@
   }
 
   .main-nav__toggle {
+    display: none;
+    position: absolute;
+    top: -33px;
+    right: 0;
     height: 62px;
     background: none;
     border: none;
@@ -39,6 +43,7 @@
   .main-nav__list {
     @media (max-width: $tablet-width) {
       position: absolute;
+      top: 32px;
       right: 0;
       margin: 0;
       padding: 0;

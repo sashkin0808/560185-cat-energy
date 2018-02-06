@@ -20,13 +20,25 @@
     text-align: center;
     border-top: 1px solid $border;
 
+    &:last-child {
+      border-bottom: 1px solid $border;
+    }
+
     @media (min-width: $tablet-width) {
       border: none;
       margin-left: 27px;
       padding: 9px 0;
 
+      &:last-child {
+        border-bottom: transparent;
+      }
+
       &--active {
         border-bottom: 2px solid $green;
+
+        &:last-child {
+          border-bottom: 2px solid $green;
+        }
       }
     }
 
@@ -45,8 +57,17 @@
     text-decoration: none;
     color: $blacktitle;
 
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     @media (min-width: $tablet-width) {
       font-size: 18px;
+      font-weight: normal;
       line-height: 24.86px;
       color: $blacktext;
     }

@@ -45,7 +45,17 @@
       padding: 0;
       padding-bottom: 7px;
       font-size: 20px;
-      border-bottom: 1px dotted rgba(1, 1, 1, 0.23);
+      border-bottom: 1px dotted rgba(17, 17, 17, 0.23);
+
+      &:hover {
+        border-bottom: 1px solid rgba(17, 17, 17, 0.4);
+      }
+
+      &:active,
+      &:focus {
+        border-bottom: 1px solid transparent;
+        outline: none;
+      }
     }
   }
 
@@ -77,6 +87,19 @@
         border-radius: 50%;
         background-color: $white;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    &:hover {
+      &::before {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    &:active {
+      &::before {
+        border: 2px solid $green;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
       }
     }
 

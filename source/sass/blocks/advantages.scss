@@ -85,24 +85,44 @@
       background-image: url(../img/advantage-leaf@1x.png);
       background-position: center;
       background-repeat: no-repeat;
+      background-size: 50px 50px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-leaf@2x.png");
+      }
     }
 
     &--use::before {
       background-image: url(../img/advantage-powder@1x.png);
       background-position: center;
       background-repeat: no-repeat;
+      background-size: 50px 50px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-powder@2x.png");
+      }
     }
 
     &--food::before {
       background-image: url(../img/advantage-dining@1x.png);
       background-position: center;
       background-repeat: no-repeat;
+      background-size: 50px 50px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-dining@2x.png");
+      }
     }
 
     &--time::before {
       background-image: url(../img/advantage-clock@1x.png);
       background-position: center;
       background-repeat: no-repeat;
+      background-size: 50px 50px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-clock@2x.png");
+      }
     }
 
     @media (min-width: $tablet-width) {
