@@ -1,6 +1,6 @@
 .additions-catalog {
   @media (min-width: $desktop-width) {
-    padding-bottom: 87px;
+    padding-bottom: 85px;
   }
 
   .additions-catalog__wrapper {
@@ -39,7 +39,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-left: 69px;
+      padding: 0;
     }
   }
 

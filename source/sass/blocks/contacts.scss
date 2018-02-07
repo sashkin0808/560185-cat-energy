@@ -18,7 +18,7 @@
   .contacts__container {
     @media (min-width: $desktop-width) {
       position: relative;
-      width: 1420px;
+      width: 1300px;
       margin: 0 auto;
       padding: 0 100px;
     }
@@ -42,8 +42,8 @@
       @include desktop-half;
 
       margin: 0;
-      left: 100px;
-      top: 91px;
+      left: 40px;
+      top: 95px;
       padding: 63px 75px 35px 75px;
       background: $white;
       z-index: 2;
