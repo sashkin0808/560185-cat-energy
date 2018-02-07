@@ -13,7 +13,7 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
-    padding-top: 13px;
+      padding-top: 13px;
     }
 
     @media (min-width: $desktop-width) {
@@ -26,4 +26,17 @@
       margin-right: 24px;
     }
   }
+
+  .copyright__img {
+    fill: $grayicon;
+  }
+}
+
+.copyright__link:hover .copyright__img {
+  fill: $green;
+}
+
+.copyright__link:active .copyright__img {
+  fill: $green;
+  opacity: 0.3;
 }
