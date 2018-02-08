@@ -36,6 +36,16 @@
       top: 216px;
       height: calc(100% - 216px);
       background: $gray;
+      background-image: linear-gradient(to right, $gray 80%, $gray-background 80%);
+    }
+  }
+
+  .reviews__background-shadow {
+    @media (min-width: $desktop-width) {
+      height: 100%;
+      width: 1300px;
+      margin: 0 auto;
+      background-image: linear-gradient(to right, $gray 975px, $gray-background 975px);
     }
   }
 
@@ -55,6 +65,8 @@
   }
 
   .reviews__text-wrapper {
+    @include all-to-desktop-half;
+
     @media (max-width: $tablet-width) {
       padding: 0 20px;
     }
@@ -66,8 +78,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      @include desktop-half;
-
       text-align: left;
     }
   }

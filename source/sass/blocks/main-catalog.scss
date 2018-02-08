@@ -45,6 +45,8 @@
   }
 
   .main-catalog__item {
+    @include all-324px-245px;
+
     @media (max-width: $tablet-width) {
       &:first-child {
         border-top: 1px solid $w-gray;
@@ -53,14 +55,7 @@
 
     @media (min-width: $tablet-width) {
       display: flex;
-
-      @include tablet-half;
-
       margin-top: 59px;
-    }
-
-    @media (min-width: $desktop-width) {
-      @include column;
     }
   }
 }

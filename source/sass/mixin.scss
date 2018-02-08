@@ -2,27 +2,78 @@
   width: 100%;
 }
 
-@mixin column {
-  width: 245px;
+@mixin all-to-tablet285px {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+  }
 }
 
-@mixin tablet-285px {
-  width: 285px;
+@mixin all-to-desktop245px {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
-@mixin mobile-half {
+@mixin all-to-desktop-half {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+@mixin all-to-desktop895px {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+  }
+}
+
+@mixin m140px-to-all {
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
-@mixin tablet-half {
-  width: 324px;
+@mixin all-324px-245px {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
-@mixin desktop-half {
-  width: 570px;
+@mixin all-285px-570px {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
-@mixin desktop-3column {
-  width: 895px;
-}
+@mixin all-285px-245px {
+  width: 100%;
 
+  @media (min-width: $tablet-width) {
+    width: 285px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
