@@ -15,6 +15,11 @@
     background: none;
     border: none;
 
+    &--visible {
+      display: block;
+
+    }
+
     &--open::before {
       content: "";
       position: absolute;

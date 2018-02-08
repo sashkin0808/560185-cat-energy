@@ -26,11 +26,82 @@
 
     @media (min-width: $desktop-width) {
       &--desktop {
-        @include desktop-half;
-
+        width: 570px;
         margin: 0;
         padding: 0;
       }
+    }
+  }
+
+  .form__title-shadow {
+    @include all-width;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 3px;
+      background-color: $green;
+      z-index: -2;
+    }
+  }
+
+  .form__title-wrapper {
+    margin-bottom: 31px;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 75px;
+      padding-left: 30px;
+      padding-right: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 74px;
+      padding: 0;
+    }
+
+    &--margin {
+      margin-bottom: 37px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 64px;
+      }
+    }
+  }
+
+  .form__set-title {
+    position: relative;
+    display: inline-block;
+    max-width: 225px;
+    margin: 0;
+    padding: 0 20px;
+    font-family: $oswald;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    color: $blacktitle;
+    background-color: $white;
+
+    @media (min-width: $tablet-width) {
+      max-width: 630px;
+      padding: 0 40px;
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  .form__set-wrapper {
+    @media (min-width: $tablet-width) {
+      @include all-width;
+
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
     }
   }
 
@@ -58,14 +129,85 @@
     }
   }
 
-  .form__set-wrapper {
-    @media (min-width: $tablet-width) {
-      @include all-width;
+  .form__radio-set {
+    @include all-to-desktop-half;
 
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      align-items: center;
+    min-width: 100px;
+    margin: 0;
+    padding: 27px 0;
+    border: none;
+    border-top: 1px solid $w-gray;
+    border-bottom: 1px solid $w-gray;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      position: relative;
+      padding: 0;
+      border: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(to right, $white 50%, $border 50%);
+        z-index: -1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(to right, $white 50%, $border 50%);
+        z-index: -1;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 33px 0 34px;
+      padding-left: 26px;
+      border: 1px solid $border;
+    }
+  }
+
+  .form__contact-set {
+    padding-top: 27px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 70px;
+    }
+  }
+
+  .form__text-set {
+    padding-top: 14px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 44px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 68px;
+    }
+  }
+
+  .form__catalog-set {
+    padding-top: 26px;
+    margin-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 61px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 70px;
+      padding-top: 64px;
     }
   }
 
@@ -101,25 +243,23 @@
     }
 
     &--column {
-      @media (min-width: $desktop-width) {
-        @include desktop-half;
+      @include all-to-desktop-half;
 
+      @media (min-width: $desktop-width) {
         margin-bottom: 0;
       }
     }
 
     &--small {
+      @include all-285px-245px;
+
       margin-bottom: 24px;
 
       @media (min-width: $tablet-width) {
-        @include tablet-285px;
-
         margin-bottom: 52px;
       }
 
       @media (min-width: $desktop-width) {
-        @include column;
-
         margin-bottom: 0;
       }
     }
@@ -222,6 +362,10 @@
     }
   }
 
+  .form__img {
+    fill: $blacktext;
+  }
+
   .form__input {
     min-width: 100px;
     flex-grow: 1;
@@ -253,20 +397,6 @@
       font-size: 20px;
       line-height: 20px;
       padding: 13px 15px;
-    }
-  }
-
-  .form__img {
-    position: absolute;
-
-    &--mail {
-      top: 16px;
-      right: 16px;
-    }
-
-    &--phone {
-      top: 13px;
-      right: 13px;
     }
   }
 
@@ -310,163 +440,40 @@
     @media (min-width: $tablet-width) {
       height: 174px;
     }
-  }
 
-  .form__radio-set {
-    @include all-width;
-
-    min-width: 100px;
-    margin: 0;
-    padding: 27px 0;
-    border: none;
-    border-top: 1px solid $w-gray;
-    border-bottom: 1px solid $w-gray;
-
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-      position: relative;
-      padding: 0;
-      border: none;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 1px;
-        background-image: linear-gradient(to right, $white 50%, $border 50%);
-        z-index: -1;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 1px;
-        background-image: linear-gradient(to right, $white 50%, $border 50%);
-        z-index: -1;
-      }
+    &:hover {
+      border-color: $l-gray;
     }
 
-    @media (min-width: $desktop-width) {
-      @include desktop-half;
-
-      padding: 33px 0 34px;
-      padding-left: 26px;
-      border: 1px solid $border;
+    &:active,
+    &:focus {
+      border-color: $graytext;
+      outline: none;
     }
   }
 
-  .form__title-shadow {
-    @include all-width;
-
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      height: 3px;
-      background-color: $green;
-      z-index: -2;
-    }
-  }
-
-  .form__title-wrapper {
-    margin-bottom: 31px;
-    padding: 0;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 75px;
-      padding-left: 30px;
-      padding-right: 37px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 74px;
-      padding: 0;
-    }
-
-    &--margin {
-      margin-bottom: 37px;
-
-      @media (min-width: $tablet-width) {
-        margin-bottom: 64px;
-      }
-    }
-  }
-
-  .form__set-title {
-    position: relative;
-    display: inline-block;
-    max-width: 225px;
-    margin: 0;
-    padding: 0 20px;
+  .form__input::placeholder,
+  .form__textarea::placeholder {
     font-family: $oswald;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 24px;
-    color: $blacktitle;
-    background-color: $white;
-
-    @media (min-width: $tablet-width) {
-      max-width: 630px;
-      padding: 0 40px;
-      font-size: 36px;
-      line-height: 36px;
-    }
+    text-transform: uppercase;
   }
 
-  .form__contact-set {
-    padding-top: 27px;
+  .form__img {
+    position: absolute;
 
-    @media (min-width: $tablet-width) {
-      padding-top: 75px;
+    &--mail {
+      top: 16px;
+      right: 16px;
     }
 
-    @media (min-width: $desktop-width) {
-      padding-top: 70px;
-    }
-  }
-
-  .form__text-set {
-    padding-top: 14px;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 44px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 68px;
-    }
-  }
-
-  .form__catalog-set {
-    padding-top: 26px;
-    margin-bottom: 17px;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 61px;
-      margin-bottom: 10px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 70px;
-      padding-top: 64px;
+    &--phone {
+      top: 13px;
+      right: 13px;
     }
   }
 
   .form__submit-button {
-    @include all-width;
-
-    @media (min-width: $tablet-width) {
-      @include tablet-285px;
-    }
-
-    @media (min-width: $desktop-width) {
-      @include desktop-half;
-    }
+    @include all-285px-570px;
   }
 
   .form__text {
@@ -477,18 +484,24 @@
     text-align: center;
     color: $graytext;
 
-    @media (min-width: $tablet-width) {
-      @include tablet-285px;
+    @include all-285px-570px;
 
+    @media (min-width: $tablet-width) {
       margin-right: auto;
       font-size: 16px;
     }
 
     @media (min-width: $desktop-width) {
-      @include desktop-half;
-
       padding-left: 80px;
       text-align: left;
+    }
+  }
+
+  .form__input--invalid {
+    border-color: $border-red;
+
+    & + .form__img {
+      fill: $border-red;
     }
   }
 }

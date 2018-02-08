@@ -9,7 +9,7 @@
   <body>
 
     <header class="page-header">
-      <div class="page-header__wrapper wrapper">
+      <div class="page-header__wrapper page-header__wrapper--menu wrapper">
         <a class="page-header__logo">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
@@ -18,25 +18,25 @@
           </picture>
           <svg class="page-header__logo-mobile" width="101" height="18"><use xlink:href="img/sprite.svg#logo-mobile"></use></svg>
         </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--open" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list site-list--background">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="desktop-background"></div>
-    </div>
-  </header>
+        <nav class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle--open" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list site-list--background">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="desktop-background"></div>
+      </div>
+    </header>
 
     <main class="page-main">
 
@@ -45,6 +45,9 @@
           <h1 class="main-info__title">Функциональное питание для котов</h1>
           <p class="main-info__slogan">Занялся собой? Займись котом!</p>
           <picture class="main-info__image-container">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
             <img class="main-info__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat food">
@@ -121,6 +124,9 @@
             <ul class="reviews__gallery slider__list">
               <li class="reviews__photo slider__item slider__item--open">
                 <picture class="main-info__image">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                   <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                   <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фото кота До">
@@ -128,6 +134,9 @@
               </li>
               <li class="reviews__photo slider__item">
                 <picture class="main-info__image">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                   <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                   <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Фото кота После">
@@ -141,7 +150,9 @@
             </div>
           </div>
         </div>
-        <div class="reviews__background"></div>
+        <div class="reviews__background">
+          <div class="reviews__background-shadow"></div>
+        </div>
       </section>
 
       <section class="contacts contacts--white">
@@ -199,6 +210,7 @@
     </footer>
 
     <script src="js/svgxuse.min.js" defer></script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>

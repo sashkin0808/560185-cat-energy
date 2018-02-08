@@ -7,8 +7,14 @@
     align-items: center;
 
     @media (max-width: $tablet-width) {
-      padding-bottom: 211px;
       padding-top: 12px;
+      padding-bottom: 13px;
+      border-bottom: 1px solid $border;
+
+      &--menu {
+        padding-bottom: 211px;
+        border-bottom: none;
+      }
     }
 
     @media (min-width: $tablet-width) {

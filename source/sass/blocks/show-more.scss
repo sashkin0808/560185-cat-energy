@@ -23,6 +23,10 @@
       height: 60px;
       background-image: url(../img/icon-plus.svg);
     }
+
+    @media (min-width: $desktop-width) {
+      left: 93px;
+    }
   }
 
   @media (min-width: $tablet-width) {

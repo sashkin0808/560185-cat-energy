@@ -69,21 +69,15 @@
   }
 
   .additions-catalog__list {
+    @include all-to-desktop895px;
+
     margin: 0;
     padding: 0;
     list-style: none;
-
-    @media (min-width: $desktop-width) {
-      @include desktop-3column;
-    }
   }
 
   .additions-catalog__item {
-    @include all-width;
-
-    @media (min-width: $desktop-width) {
-      @include desktop-3column;
-    }
+    @include all-to-desktop895px;
 
     &:first-child {
       border-top: 1px solid $l-gray;

@@ -52,6 +52,8 @@
     padding: 0;
     padding-left: 80px;
 
+    @include all-324px-245px;
+
     @media (min-width: $tablet-width) {
       margin-top: 61px;
       margin-bottom: 70px;
@@ -126,14 +128,6 @@
     }
 
     @media (min-width: $tablet-width) {
-      @include tablet-half;
-    }
-
-    @media (min-width: $desktop-width) {
-      @include column;
-    }
-
-    @media (min-width: $tablet-width) {
       &::after {
         content: "1";
         font-family: $oswald;
@@ -168,8 +162,7 @@
     color: $graytext;
 
     @media (min-width: $tablet-width) {
-      @include column;
-
+      width: 245px;
       font-size: 16px;
       line-height: 24px;
     }

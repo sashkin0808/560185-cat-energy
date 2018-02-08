@@ -21,6 +21,8 @@
   }
 
   .categories__item {
+    @include all-to-desktop-half;
+
     position: relative;
     padding-top: 30px;
     padding-bottom: 22px;
@@ -122,8 +124,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      @include desktop-half;
-
       &:not(:last-child) {
         margin-bottom: 0;
       }
