@@ -7,16 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   </head>
   <body>
-      <header class="page-header">
-        <div class="page-header__wrapper page-header__wrapper--menu wrapper">
-          <a class="page-header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-img" src="img/icon-logo-mobile.svg" width="33" alt="Cat Energy">
-            </picture>
-            <svg class="page-header__logo-mobile" width="101" height="18"><use xlink:href="img/sprite.svg#logo-mobile"></use></svg>
-          </a>
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="page-header">
+      <div class="page-header__wrapper page-header__wrapper--menu wrapper">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-img" src="img/icon-logo-mobile.svg" width="33" alt="Cat Energy">
+          </picture>
+          <svg class="page-header__logo-mobile" width="101" height="18"><use xlink:href="img/sprite.svg#ic-logo-mobile"></use></svg>
+        </a>
         <nav class="main-nav">
           <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
@@ -41,7 +46,7 @@
           <h1 class="form-section__title">Подбор программы</h1>
           <p class="form-section__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </div>
-          <form class="form-section__form form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="form-section__form form" action="https://echo.htmlacademy.ru" method="post" onsubmit="alert('submit!');return false">
             <div class="form__flex-container">
             <div class="form__wrapper form__wrapper--desktop wrapper">
                 <fieldset class="form__main-set">
@@ -90,12 +95,12 @@
                   <div class="form__input-container form__input-container--column">
                     <label class="form__label form__label--text-input" for="form__email">E-mail:*</label>
                     <input class="form__input form__input--email" type="email" name="email" id="form__email" placeholder="kuklachev@gmail.com" required>
-                    <svg class="form__img form__img--mail" width="17" height="13"><use xlink:href="img/sprite.svg#mail"></use></svg>
+                    <svg class="form__img form__img--mail" width="17" height="13"><use xlink:href="img/sprite.svg#ic-mail"></use></svg>
                   </div>
                   <div class="form__input-container form__input-container--column">
                     <label class="form__label form__label--text-input" for="form__phone">Телефон:*</label>
                     <input class="form__input form__input--phone" type="tel" name="phone" id="form__phone" placeholder="8 (960) 900-60-90" required>
-                    <svg class="form__img form__img--phone" width="20" height="20"><use xlink:href="img/sprite.svg#tel"></use></svg>
+                    <svg class="form__img form__img--phone" width="20" height="20"><use xlink:href="img/sprite.svg#ic-phone"></use></svg>
                   </div>
                 </div>
               </div>
@@ -178,20 +183,20 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="#">
-                <svg class="social__img social__img--mobile" width="22" height="12"><use xlink:href="img/sprite.svg#vk-mobile"></use></svg>
-                <svg class="social__img social__img--big" width="30" height="16"><use xlink:href="img/sprite.svg#vk"></use></svg>
+                <svg class="social__img social__img--mobile" width="22" height="12"><use xlink:href="img/sprite.svg#ic-vk-mobile"></use></svg>
+                <svg class="social__img social__img--big" width="30" height="16"><use xlink:href="img/sprite.svg#ic-vk"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#">
-                <svg class="social__img social__img--mobile" width="16" height="16"><use xlink:href="img/sprite.svg#inst-mobile"></use></svg>
-                <svg class="social__img social__img--big" width="23" height="23"><use xlink:href="img/sprite.svg#inst"></use></svg>
+                <svg class="social__img social__img--mobile" width="16" height="16"><use xlink:href="img/sprite.svg#ic-insta-mobile"></use></svg>
+                <svg class="social__img social__img--big" width="23" height="23"><use xlink:href="img/sprite.svg#ic-insta"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
                 <svg class="social__img social__img--mobile" width="10" height="19"><use xlink:href="img/sprite.svg#fb-mobile"></use></svg>
-                <svg class="social__img social__img--big" width="13.518" height="27.75"><use xlink:href="img/sprite.svg#fb"></use></svg>
+                <svg class="social__img social__img--big" width="13.518" height="27.75"><use xlink:href="img/sprite.svg#ic-fb"></use></svg>
               </a>
             </li>
           </ul>
@@ -199,7 +204,7 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text"> HTML Academy</span>
-            <svg class="copyright__img" width="27" height="34"><use xlink:href="img/sprite.svg#htmlacademy"></use></svg>
+            <svg class="copyright__img" width="27" height="34"><use xlink:href="img/sprite.svg#ic-htmlacademy"></use></svg>
           </a>
         </div>
       </div>
