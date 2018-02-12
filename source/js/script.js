@@ -17,7 +17,6 @@ var button = document.querySelector(".main-nav__toggle");
 var container = document.querySelector(".page-header__wrapper");
 var menu = document.querySelector(".site-list");
 
-
 button.classList.add("main-nav__toggle--visible");
 menu.classList.add("site-list--hidden");
 container.classList.remove("page-header__wrapper--menu");

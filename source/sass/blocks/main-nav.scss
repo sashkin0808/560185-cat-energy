@@ -15,9 +15,12 @@
     background: none;
     border: none;
 
+    &:focus {
+      outline: none;
+    }
+
     &--visible {
       display: block;
-
     }
 
     &--open::before {
