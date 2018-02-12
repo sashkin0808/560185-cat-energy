@@ -362,10 +362,6 @@
     }
   }
 
-  .form__img {
-    fill: $blacktext;
-  }
-
   .form__input {
     min-width: 100px;
     flex-grow: 1;
@@ -424,7 +420,7 @@
   }
 
   .form__checkbox:checked + .form__label--checkbox::before {
-    background-image: url(../img/icon-tick.svg);
+    background-image: url("../img/icon-tick.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 21px 16px;
@@ -460,6 +456,7 @@
 
   .form__img {
     position: absolute;
+    fill: $blacktext;
 
     &--mail {
       top: 16px;

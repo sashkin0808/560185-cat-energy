@@ -30,7 +30,7 @@
       top: 23px;
       width: 24px;
       height: 18px;
-      background-image: url(../img/icon-mobile-menu.svg);
+      background-image: url("../img/icon-mobile-menu.svg");
     }
 
     &--close::before {
@@ -40,7 +40,7 @@
       top: 23px;
       width: 18px;
       height: 18px;
-      background-image: url(../img/icon-close.svg);
+      background-image: url("../img/icon-close.svg");
     }
 
     @media (min-width: $tablet-width) {

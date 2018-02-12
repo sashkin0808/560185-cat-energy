@@ -1,10 +1,8 @@
 @import "normalize.scss";
-
 @import "var.scss";
 @import "fonts.scss";
 @import "mixin.scss";
 @import "common.scss";
-
 @import "blocks/header.scss";
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
@@ -30,7 +28,9 @@ html {
   overflow-x: hidden;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
