@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <div style="display:none">
@@ -126,7 +129,7 @@
           <div class="reviews__slider-wrapper slider">
             <ul class="reviews__gallery slider__list">
               <li class="reviews__photo slider__item slider__item--open">
-                <picture class="main-info__image">
+                <picture class="reviews__image">
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
@@ -136,7 +139,7 @@
                 </picture>
               </li>
               <li class="reviews__photo slider__item">
-                <picture class="main-info__image">
+                <picture class="reviews__image">
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
